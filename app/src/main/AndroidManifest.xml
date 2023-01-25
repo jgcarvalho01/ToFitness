@@ -12,6 +12,9 @@
         android:theme="@style/Theme.ToFitness"
         tools:targetApi="31">
         <activity
+            android:name=".Relatorio_Form"
+            android:exported="false" />
+        <activity
             android:name=".ResultadoImc"
             android:exported="false" />
         <activity
