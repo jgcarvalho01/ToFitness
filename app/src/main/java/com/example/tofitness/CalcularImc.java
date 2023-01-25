@@ -55,6 +55,11 @@ public class CalcularImc extends AppCompatActivity {
         editAltura.setText("");
     }
 
+    public void Voltar(View v) {
+        Intent i = new Intent(CalcularImc.this, MainActivity.class);
+        startActivity(i);
+    }
+
     private void alert(String s) {
         Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
