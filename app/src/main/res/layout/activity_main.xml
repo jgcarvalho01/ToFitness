@@ -20,7 +20,9 @@
             android:layout_height="wrap_content"
             android:text="Tô Fitness"
             android:textSize="34sp"
-            android:background="#FF4500"/>
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:background="#F67B4D"/>
 
         <Button
             android:id="@+id/btnTreinos"
@@ -31,6 +33,7 @@
             android:layout_marginRight="84dp"
             android:layout_marginBottom="24dp"
             android:background="@drawable/background_button"
+            android:onClick="MeuTreino"
             android:text="Meu treino" />
 
         <Button
@@ -41,6 +44,7 @@
             android:layout_marginRight="84dp"
             android:layout_marginBottom="24dp"
             android:background="@drawable/background_button"
+            android:onClick="Relatorios"
             android:text="Relatórios" />
 
         <Button
@@ -51,17 +55,19 @@
             android:layout_marginRight="84dp"
             android:layout_marginBottom="24dp"
             android:background="@drawable/background_button"
+            android:onClick="CalcularImc"
             android:text="Calcular IMC" />
 
         <Button
-            android:id="@+id/btnAcademias"
+            android:id="@+id/btnSair"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="84dp"
             android:layout_marginRight="84dp"
             android:layout_marginBottom="24dp"
             android:background="@drawable/background_button"
-            android:text="Ache academias" />
+            android:onClick="Sair"
+            android:text="Sair" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
