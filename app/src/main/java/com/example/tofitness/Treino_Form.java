@@ -41,7 +41,7 @@ public class Treino_Form extends AppCompatActivity {
     }
 
     public void Voltar(View view) {
-        Intent i = new Intent(this, MeuTreino.class);
+        Intent i = new Intent(Treino_Form.this, MeuTreino.class);
         startActivity(i);
     }
 }
