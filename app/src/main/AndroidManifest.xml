@@ -12,6 +12,21 @@
         android:theme="@style/Theme.ToFitness"
         tools:targetApi="31">
         <activity
+            android:name=".AlterarRelatorio"
+            android:exported="false" />
+        <activity
+            android:name=".AlterarTreino"
+            android:exported="false" />
+        <activity
+            android:name=".TelaSplashII"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Relatorio_Form"
             android:exported="false" />
         <activity
@@ -29,15 +44,6 @@
         <activity
             android:name=".MeuTreino"
             android:exported="false" />
-        <activity
-            android:name=".TelaSplash"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
