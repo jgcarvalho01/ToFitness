@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Calcular IMC"
-            android:textSize="24dp" />
+            android:textSize="24dp"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/editPeso"
@@ -28,6 +29,8 @@
             android:layout_marginTop="180dp"
             android:ems="10"
             android:hint="Peso"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:inputType="textPersonName" />
 
         <EditText
@@ -36,7 +39,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Altura"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
 
         <Button
             android:id="@+id/button"
