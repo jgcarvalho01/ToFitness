@@ -18,22 +18,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Adicionar Treino"
-            android:textSize="24dp"/>
+            android:textSize="24dp"
+            android:textColor="#000000"/>
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="100dp"
             android:text="Categoria do treino:"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/editCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/textView5"
@@ -41,14 +44,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Exercício:"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:textColor="#000000"/>
 
         <EditText
             android:id="@+id/editTipo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/textView6"
@@ -56,14 +61,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Repetição:"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:textColor="#000000"/>
 
         <EditText
             android:id="@+id/editRepeticao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/btnAdicionarTreino"
@@ -84,7 +91,8 @@
             android:layout_marginRight="84dp"
             android:layout_marginBottom="24dp"
             android:background="@drawable/background_button"
-            android:text="Voltar" />
+            android:text="Voltar"
+            android:onClick="Voltar"/>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,21 +18,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Adicionar Relatório"
-            android:textSize="24dp"/>
+            android:textSize="24dp"
+            android:textColor="#000000"/>
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="100dp"
             android:text="Informe sua Altura:"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:textColor="#000000"/>
 
         <EditText
             android:id="@+id/editAltura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@color/black"
             android:inputType="textPersonName" />
 
         <TextView
@@ -41,14 +44,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Informe seu peso:"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:textColor="#000000"/>
 
         <EditText
             android:id="@+id/editPeso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/textView6"
@@ -56,14 +61,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Informe seu IMC:"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:textColor="#000000"/>
 
         <EditText
             android:id="@+id/editIMC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/textView7"
@@ -71,14 +78,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Data:"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:textColor="#000000"/>
 
         <EditText
             android:id="@+id/editData"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/btnAdicionarRelatorio"
