@@ -62,6 +62,21 @@ public class BancoController {
         return cursor;
     }
 
+    public Cursor carregarDadosTreinoById(int id) {
+        Cursor cursor;
+        String[] campos = {CriaBanco.ID_TREINO, CriaBanco.CATEGORIA_TREINO, CriaBanco.TIPO_TREINO, CriaBanco.REPETICAO_TREINO};
+        String where = CriaBanco.ID_TREINO + "=" + id;
+        db = banco.getReadableDatabase();
+        cursor = db.query(CriaBanco.TABELA_TREINO, campos, where, null, null, null, null, null);
+
+        if (cursor != null) {
+            cursor.moveToFirst();
+        }
+
+        db.close();
+        return cursor;
+    }
+
     public void deleteTreino(int id) {
         String where = CriaBanco.ID_TREINO + "=" + id;
         db = banco.getWritableDatabase();
@@ -116,6 +131,21 @@ public class BancoController {
 
         if (cursor != null)
             cursor.moveToFirst();
+        db.close();
+        return cursor;
+    }
+
+    public Cursor carregarDadosRelatorioById(int id) {
+        Cursor cursor;
+        String[] campos = {CriaBanco.ID_RELATORIO, CriaBanco.ALTURA_RELATORIO, CriaBanco.PESO_RELATORIO, CriaBanco.IMC_RELATORIO, CriaBanco.DATA_RELATORIO};
+        String where = CriaBanco.ID_RELATORIO + "=" + id;
+        db = banco.getReadableDatabase();
+        cursor = db.query(CriaBanco.TABELA_RELATORIO, campos, where, null, null, null, null, null);
+
+        if (cursor != null) {
+            cursor.moveToFirst();
+        }
+
         db.close();
         return cursor;
     }
