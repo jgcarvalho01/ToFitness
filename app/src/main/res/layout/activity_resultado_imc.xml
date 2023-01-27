@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Resultado IMC:"
-            android:textSize="24dp" />
+            android:textSize="24dp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/textResult"
@@ -28,7 +29,7 @@
             android:layout_marginTop="200dp"
             android:onClick="Voltar"
             android:textAlignment="center"
-            android:textColor="#562BA1"
+            android:textColor="#000000"
             android:textSize="26sp"
             android:textStyle="bold" />
 
