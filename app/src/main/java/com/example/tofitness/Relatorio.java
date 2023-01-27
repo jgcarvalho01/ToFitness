@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
@@ -27,6 +28,19 @@ public class Relatorio extends AppCompatActivity {
         SimpleCursorAdapter adaptador = new SimpleCursorAdapter(getBaseContext(), R.layout.relatorio_layout, cursor, nomeCampos, idViews, 0);
         lista = findViewById(R.id.lvRelatorio);
         lista.setAdapter(adaptador);
+
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String codigo;
+                cursor.moveToPosition(i);
+                codigo = cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.ID_RELATORIO));
+                Intent intent = new Intent(Relatorio.this, AlterarRelatorio.class);
+                intent.putExtra("codigo", codigo);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 

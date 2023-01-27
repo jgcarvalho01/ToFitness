@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
@@ -27,6 +28,19 @@ public class MeuTreino extends AppCompatActivity {
         SimpleCursorAdapter adaptador = new SimpleCursorAdapter(getBaseContext(), R.layout.treino_layout, cursor, nomeCampos, idViews, 0);
         lista = findViewById(R.id.lvTreino);
         lista.setAdapter(adaptador);
+
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String codigo;
+                cursor.moveToPosition(i);
+                codigo = cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.ID_TREINO));
+                Intent intent = new Intent(MeuTreino.this, AlterarTreino.class);
+                intent.putExtra("codigo", codigo);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 
